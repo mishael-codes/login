@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quaapay - Login</title>
+    <link href="../dist/output.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex w-screen h-screen bg-white overflow-hidden">
+      <div
+        class="bg-quaapay-indigo w-1/2 h-full flex items-center justify-center flex-col"
+      >
+        <img src="../dist/assets/hero.png" alt="hero" class="scale-[.65]" />
+        <div>
+          <div class="text-left w-96 mx-0 my-auto text-white">
+            <h1 class="font-medium text-xl mb-1.5 -mt-7">
+              Introducing you to Quaapay Wallet
+            </h1>
+            <p class="font-normal text-xs">
+              Downloading our mobile app, unlocks a world of possibilities for
+              managing your finances, including seamless currency exchange, both
+              locally and internationally.
+            </p>
+          </div>
+          <div class="w-full flex items-center justify-center mt-6">
+            <a
+              href="#"
+              class="w-5/12 bg-white flex items-center justify-center rounded-[10px] mr-1.5"
+            >
+              <img
+                src="../dist/assets/apple-icon.png"
+                alt="apple-logo"
+                class="w-[30px] h-[30px]"
+              />
+              <button class="text-left ml-1.5 text-xs p-2">
+                Download on <br />
+                <span class="font-bold text-black">Apple Store</span>
+              </button>
+            </a>
+            <a
+              href="#"
+              class="w-5/12 bg-white flex items-center justify-center rounded-[10px] ml-1.5"
+            >
+              <img
+                src="../dist/assets/google-play.png"
+                alt="google-play-logo"
+                class="w-[30px] h-[30px]"
+              />
+              <button class="text-left ml-1.5 text-xs p-2">
+                Get on <br />
+                <span class="font-bold text-black">Google Play</span>
+              </button>
+            </a>
+          </div>
+          <div>
+            <img src="../dist/assets/slide-info.png" alt="" class="mt-8 mb-4" />
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 h-full flex justify-center flex-col">
+        <div class="lg:w-80 lg:ml-12 md:w-72 md:h-auto md:ml-7">
+          <div class="text-left">
+            <h2 class="text-black font-bold leading-[40px] text-3xl">
+              Welcome Back!
+            </h2>
+            <p class="text-sm">
+              Input your details or use Quaapay wallet details to login to your
+              account.
+            </p>
+          </div>
+          <form
+            method="post"
+            class="flex flex-col items-start text-left mt-8 w-full"
+          >
+            <label for="email" class="w-full mb-3">
+              Email
+              <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
+                placeholder="Enter your email address"
+              />
+            </label>
+            <label for="password" class="w-full mb-5">
+              Password
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
+                placeholder="Enter Password"
+              />
+            </label>
+            <div class="w-full flex justify-between">
+              <label for="remember" class="text-sm">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class="appearance-none border border-quaapay-indigo checked:bg-quaapay-indigo w-5 h-5 after:checked:content-['✔'] after:checked:text-white after:checked:flex after:checked:items-center after:checked:justify-center"
+                />Remember Me
+              </label>
+              <a href="#" class="text-quaapay-indigo text-sm"
+                >Forgot your password?</a
+              >
+            </div>
+          </form>
+          <div class="flex items-center justify-center flex-col">
+            <button
+              type="submit"
+              class="w-full bg-quaapay-indigo rounded mt-8 mb-3 h-10 text-white"
+            >
+              Log In
+            </button>
+            <span>OR</span>
+            <button
+              class="w-full border rounded mt-3 h-10 text-black flex items-center justify-center"
+            >
+              <img
+                src="../dist/assets/google-icon.png"
+                alt="google-icon"
+                class="w-[30px] h-[30px] mr-2"
+              />
+              <a href="#">Login with Google</a>
+            </button>
+          </div>
+          <div class="w-full mt-5 flex items-center justify-center">
+            <p class="text-sm">
+              Don't have an account?
+              <a href="./signup.html" class="text-quaapay-indigo"
+                >Create Account</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
