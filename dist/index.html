@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quaapay - Login</title>
-    <link href="./dist/output.css" type="text/css" rel="stylesheet" />
+    <link href="./style.css" type="text/css" rel="stylesheet" />
+    <link href="./output.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <main class="flex w-screen h-screen bg-white overflow-hidden">
       <div
         class="bg-quaapay-indigo w-1/2 h-full flex items-center justify-center flex-col"
       >
-        <img src="./dist/assets/hero.png" alt="hero" class="scale-[.65]" />
+        <img src="./assets/hero.png" alt="hero" class="scale-[.65]" />
         <div>
           <div class="text-left w-96 mx-0 my-auto text-white">
             <h1 class="font-medium text-xl mb-1.5 -mt-7">
@@ -29,7 +30,7 @@
               class="w-5/12 bg-white flex items-center justify-center rounded-[10px] mr-1.5"
             >
               <img
-                src="./dist/assets/apple-icon.png"
+                src="./assets/apple-icon.png"
                 alt="apple-logo"
                 class="w-[30px] h-[30px]"
               />
@@ -43,7 +44,7 @@
               class="w-5/12 bg-white flex items-center justify-center rounded-[10px] ml-1.5"
             >
               <img
-                src="./dist/assets/google-play.png"
+                src="./assets/google-play.png"
                 alt="google-play-logo"
                 class="w-[30px] h-[30px]"
               />
@@ -54,7 +55,7 @@
             </a>
           </div>
           <div>
-            <img src="./dist/assets/slide-info.png" alt="" class="mt-8 mb-4" />
+            <img src="./assets/slide-info.png" alt="" class="mt-8 mb-4" />
           </div>
         </div>
       </div>
@@ -71,7 +72,7 @@
           </div>
           <form
             method="post"
-            class="flex flex-col items-start text-left mt-8 w-full"
+            class="login-form flex flex-col items-start text-left mt-8 w-full"
           >
             <label for="email" class="w-full mb-3">
               Email
@@ -83,6 +84,7 @@
                 class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
                 placeholder="Enter your email address"
               />
+              <div id="error" class="text-xs font-medium text-red-800"></div>
             </label>
             <label for="password" class="w-full mb-5">
               Password
@@ -94,6 +96,10 @@
                 class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
                 placeholder="Enter Password"
               />
+              <div
+                id="error"
+                class="text-xs font-medium text-red-800"
+              ></div>
             </label>
             <div class="w-full flex justify-between">
               <label for="remember" class="text-sm">
@@ -108,30 +114,31 @@
                 >Forgot your password?</a
               >
             </div>
+            <div class="flex w-full items-center justify-center flex-col">
+              <button
+                type="submit"
+                id="button"
+                class="w-full bg-quaapay-indigo rounded mt-8 mb-3 h-10 text-white"
+              >
+                Log In
+              </button>
+              <span>OR</span>
+              <button
+                class="w-full border rounded mt-3 h-10 text-black flex items-center justify-center"
+              >
+                <img
+                  src="./assets/google-icon.png"
+                  alt="google-icon"
+                  class="w-[30px] h-[30px] mr-2"
+                />
+                <a href="#">Login with Google</a>
+              </button>
+            </div>
           </form>
-          <div class="flex items-center justify-center flex-col">
-            <button
-              type="submit"
-              class="w-full bg-quaapay-indigo rounded mt-8 mb-3 h-10 text-white"
-            >
-              Log In
-            </button>
-            <span>OR</span>
-            <button
-              class="w-full border rounded mt-3 h-10 text-black flex items-center justify-center"
-            >
-              <img
-                src="./dist/assets/google-icon.png"
-                alt="google-icon"
-                class="w-[30px] h-[30px] mr-2"
-              />
-              <a href="#">Login with Google</a>
-            </button>
-          </div>
           <div class="w-full mt-5 flex items-center justify-center">
             <p class="text-sm">
               Don't have an account?
-              <a href="./src/signup.html" class="text-quaapay-indigo"
+              <a href="../src/signup.html" class="text-quaapay-indigo"
                 >Create Account</a
               >
             </p>
@@ -139,5 +146,7 @@
         </div>
       </div>
     </main>
+
+    <script src="../src/index.js"></script>
   </body>
 </html>

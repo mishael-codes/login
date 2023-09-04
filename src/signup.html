@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quaapay - Create Account</title>
+    <link rel="stylesheet" href="../dist/style.css">
     <link href="../dist/output.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
@@ -71,7 +72,7 @@
           </div>
           <form
             method="post"
-            class="flex flex-col items-start text-left mt-8 w-full"
+            class="signup-form flex flex-col items-start text-left mt-8 w-full"
           >
             <label for="email" class="w-full mb-3">
               Email
@@ -83,6 +84,10 @@
                 class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
                 placeholder="Enter your email address"
               />
+              <div
+                id="error"
+                class="text-xs font-bold text-red-800"
+              ></div>
             </label>
             <label for="password" class="w-full mb-5">
               Password
@@ -94,6 +99,7 @@
                 class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
                 placeholder="Enter your password"
               />
+              <div id="error" class="text-xs font-bold text-red-800"></div>
             </label>
             <label for="confirmPassword" class="w-full mb-5">
               Re-Enter Password
@@ -105,35 +111,39 @@
                 class="w-full bg-zinc-100 rounded mt-1 px-3 py-2"
                 placeholder="Enter Password Again"
               />
+              <div id="error" class="text-xs font-bold text-red-800"></div>
             </label>
+            <div class="w-full flex items-center justify-center flex-col">
+              <button
+                type="submit"
+                class="w-full bg-quaapay-indigo rounded mt-3 mb-3 h-10 text-white"
+              >
+                Log In
+              </button>
+              <span>OR</span>
+              <button
+                class="w-full border rounded mt-3 h-10 text-black flex items-center justify-center"
+              >
+                <img
+                  src="../dist/assets/google-icon.png"
+                  alt="google-icon"
+                  class="w-[30px] h-[30px] mr-2"
+                />
+                <a href="#">Sign Up with Google</a>
+              </button>
+            </div>
           </form>
-          <div class="flex items-center justify-center flex-col">
-            <button
-              type="submit"
-              class="w-full bg-quaapay-indigo rounded mt-3 mb-3 h-10 text-white"
-            >
-              Log In
-            </button>
-            <span>OR</span>
-            <button
-              class="w-full border rounded mt-3 h-10 text-black flex items-center justify-center"
-            >
-              <img
-                src="../dist/assets/google-icon.png"
-                alt="google-icon"
-                class="w-[30px] h-[30px] mr-2"
-              />
-              <a href="#">Sign Up with Google</a>
-            </button>
-          </div>
           <div class="w-full mt-5 flex items-center justify-center">
             <p class="text-sm">
               Already have an account?
-              <a href="../index.html" class="text-quaapay-indigo">Sign In</a>
+              <a href="../dist/index.html" class="text-quaapay-indigo"
+                >Sign In</a
+              >
             </p>
           </div>
         </div>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

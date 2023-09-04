@@ -1,0 +1,5 @@
+.error,
+.error:focus{
+  outline: none;
+  border: 2px solid red;
+}
